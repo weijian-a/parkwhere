@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parkwhere05", "Parkwhere05\Parkwhere05.csproj", "{CBB24A57-5134-44A5-9B61-1C3FF838F968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D6B3FD71-33C8-4AC3-81C0-CCD52CF6131B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{D81D6660-76B4-4866-8A28-5AF8B44B7E33}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{04B280A9-33A6-4190-B0B3-7C570F55D416}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\Parkwhere05.json = PublishScripts\Templates\Parkwhere05.json
+		PublishScripts\Templates\Parkwhere05.param.dev.json = PublishScripts\Templates\Parkwhere05.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB24A57-5134-44A5-9B61-1C3FF838F968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB24A57-5134-44A5-9B61-1C3FF838F968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB24A57-5134-44A5-9B61-1C3FF838F968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB24A57-5134-44A5-9B61-1C3FF838F968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D81D6660-76B4-4866-8A28-5AF8B44B7E33} = {D6B3FD71-33C8-4AC3-81C0-CCD52CF6131B}
+		{04B280A9-33A6-4190-B0B3-7C570F55D416} = {D6B3FD71-33C8-4AC3-81C0-CCD52CF6131B}
+	EndGlobalSection
+EndGlobal

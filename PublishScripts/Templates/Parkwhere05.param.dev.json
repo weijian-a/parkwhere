@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "Parkwhere05"
+  },
+  "hostingPlanName": {
+    "value": "2106"
+  },
+  "siteLocation": {
+    "value": "East Asia"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "parkwhereserver"
+  },
+  "serverLocation": {
+    "value": "East Asia"
+  },
+  "administratorLogin": {
+    "value": "ParkWhereDB05"
+  },
+  "administratorLoginPassword": {
+    "value": "Parkwhere5"
+  },
+  "databaseName": {
+    "value": "Parkwhere05_db"
+  }
+}
