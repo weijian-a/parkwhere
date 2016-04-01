@@ -10,14 +10,23 @@
 namespace Parkwhere05.Models
 {
     using System;
-    using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class PetrolStation
     {
+        [Display(Name = "ID")]
         public int Id { get; set; }
+
+        [Display(Name = "Station Name")]
         public string petrolStationName { get; set; }
+
+        [Display(Name = "Address")]
         public string address { get; set; }
+
+        [Display(Name = "Latitude")]
         public Nullable<double> latitude { get; set; }
+
+        [Display(Name = "Longitude")]
         public Nullable<double> longitude { get; set; }
     }
 }
