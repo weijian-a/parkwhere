@@ -3,4 +3,7 @@
   <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-Parkwhere05-20160401042615.mdf;Initial Catalog=aspnet-Parkwhere05-20160401042615;Integrated Security=True" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\NicholasLim\\Desktop\\Parkwhere05\\Parkwhere05\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
+  <parameter name="ParkWhereDBEntities-Web.config Connection String" description="ParkWhereDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.ParkWhereContext.csdl|res://*/Models.ParkWhereContext.ssdl|res://*/Models.ParkWhereContext.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=parkwhereserver.database.windows.net;initial catalog=Parkwhere05_db;user id=ParkWhereDB05;password=Parkwhere5;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NicholasLim\\Desktop\\Parkwhere05\\Parkwhere05\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ParkWhereDBEntities']/@connectionString" />
+  </parameter>
 </parameters>

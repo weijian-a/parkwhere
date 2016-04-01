@@ -1,7 +1,35 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+@Styles.Render("~/Content/css")
+<div class="well" id="wellHomePage">
+    <h2>@ViewBag.Title.</h2>
+      <h3>@ViewBag.Lat</h3>
+
+
+    <p>
+        ParkWhere is an application that allow users to keep track of the real-time weather in Singapore on the go. 
+    </p>
+
+    <p>
+        ParkWhere provides useful information such as car park rates and availability of carparks in Singapore.
+        This information can be used to help you in choosing the most convenient and suitable carpark. 
+    </p>
+    
+    <p>
+        We also provide the address and location of different petrol stations in Singapore here. 
+
+        So, come join us today !
+         
+    </p>
+
+    <img src="~/Content/images/singapore.jpg" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+     
