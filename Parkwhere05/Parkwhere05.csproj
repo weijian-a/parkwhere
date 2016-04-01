@@ -355,6 +355,18 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Carparks\Details.cshtml" />
     <Content Include="Views\Carparks\Index.cshtml" />
+    <Content Include="Views\PetrolStations\Details.cshtml" />
+    <Content Include="Views\PetrolStations\Index.cshtml" />
+    <Content Include="Views\Bookmarks\Create.cshtml" />
+    <Content Include="Views\Bookmarks\Delete.cshtml" />
+    <Content Include="Views\Bookmarks\Details.cshtml" />
+    <Content Include="Views\Bookmarks\Edit.cshtml" />
+    <Content Include="Views\Bookmarks\Index.cshtml" />
+    <Content Include="Views\ParkingHistories\Create.cshtml" />
+    <Content Include="Views\ParkingHistories\Delete.cshtml" />
+    <Content Include="Views\ParkingHistories\Details.cshtml" />
+    <Content Include="Views\ParkingHistories\Edit.cshtml" />
+    <Content Include="Views\ParkingHistories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

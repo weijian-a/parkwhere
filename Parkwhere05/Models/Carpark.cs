@@ -14,6 +14,13 @@ namespace Parkwhere05.Models
     
     public partial class Carpark
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Carpark()
+        {
+            this.Bookmarks = new HashSet<Bookmark>();
+            this.ParkingHistories = new HashSet<ParkingHistory>();
+        }
+    
         public int id { get; set; }
         public string carparkNo { get; set; }
         public string address { get; set; }
@@ -26,5 +33,10 @@ namespace Parkwhere05.Models
         public string nightParking { get; set; }
         public string parkAndrideScheme { get; set; }
         public string adhocParking { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Bookmark> Bookmarks { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ParkingHistory> ParkingHistories { get; set; }
     }
 }

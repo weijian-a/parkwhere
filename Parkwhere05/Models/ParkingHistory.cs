@@ -19,5 +19,7 @@ namespace Parkwhere05.Models
         public string username { get; set; }
         public Nullable<System.DateTime> date { get; set; }
         public string description { get; set; }
+    
+        public virtual Carpark Carpark { get; set; }
     }
 }

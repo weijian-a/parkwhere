@@ -18,7 +18,7 @@ namespace Parkwhere05.DAL
     public class ParkWhereDBEntities : DbContext
     {
         public ParkWhereDBEntities()
-            : base("name=ParkWhereDBEntities")
+            : base("name=Parkwhere05_dbEntities")
         {
         }
 
