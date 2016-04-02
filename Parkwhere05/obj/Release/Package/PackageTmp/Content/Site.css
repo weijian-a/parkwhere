@@ -22,3 +22,54 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#homeJumbo {
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: black;
+    color:white;
+    width: unset;
+    
+}
+
+#navbar {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height: 20px;
+    line-height: 100px;
+    height: 100px;
+    padding-top: 40px;
+    color: black;
+    font-family:'Century Gothic';
+    background-color: rgb(250,250,250);
+    font-size:17px;
+}
+
+body {
+    background-color: #120e44;
+}
+
+#wellHomePage {
+    color: navy;
+    background-color: rgb(240,240,240);
+    margin-left: -120px;
+    width: 1400px;
+    height: initial;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Century Gothic';
+    font-size: 15px;
+    margin-top: 40px;
+    
+}
+
+h2,h3{
+          font-family: 'Century Gothic';
+          color: #ff0000;
+
+}
+
+hr {
+    border-color: black;
+    padding-left: -30px;
+}
