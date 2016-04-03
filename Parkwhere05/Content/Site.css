@@ -73,3 +73,8 @@ hr {
     border-color: black;
     padding-left: -30px;
 }
+
+.well {
+    padding-left: 350px;
+   height: 200px;
+}

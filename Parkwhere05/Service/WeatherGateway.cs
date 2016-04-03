@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Web;
 
-namespace ParkWhere.Services
+namespace Parkwhere05.Services
 {
     public class WeatherGateway : IWeatherGateway
     {
@@ -34,7 +34,7 @@ namespace ParkWhere.Services
                 string[] tokens = content.Split(new[] { '<' + "area name=" + '"', '"' + " forecast=" + '"', '"' + " icon=" + '"' }, StringSplitOptions.None);
                 string myArea = location.ToString();
                 int i = 0;
-                while (!tokens[i].Equals(myArea))
+                while (!tokens[i].Equals(myArea.ToUpper()))
                 {
                     i++;
                 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParkWhere.Services
+namespace Parkwhere05.Services
 {
     interface IWeatherGateway
     {

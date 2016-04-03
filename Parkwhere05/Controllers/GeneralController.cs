@@ -1,25 +1,48 @@
-﻿
-using Parkwhere05.DAL;
-using System.Net;
-using System.Web.Mvc;
+﻿using Newtonsoft.Json;
 
+using Parkwhere05.DAL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using Parkwhere05.Services;
 
 namespace Parkwhere05.Controllers
 {
     public class GeneralController<T> : Controller where T : class
     {
-        
+        WeatherGateway weatherGateway = new WeatherGateway();
+        GetMyAreaGateway getMyAddressGateway = new GetMyAreaGateway();
+        public String currentForecast;
+
         internal IDataGateway<T> dataGateway;
         internal GeneralController()
         {
-           
+            if (HomeController.CurrentCorrList != null)
+            {
+                string lat = "";
+                string lng = "";
+                foreach (var item in HomeController.CurrentCorrList)
+                {
+                    lat = item[0];
+                    lng = item[1];
+                }
+                currentForecast = weatherGateway.GetCurrentWeather(getMyAddressGateway.GetMyAreaName(lat, lng));
+                ViewBag.Weather = currentForecast;
+            }
+            else
+            {
+                ViewBag.Weather = "Error retriving weather forecast. Please try again.";
+            }
         }
+
         public ActionResult currentlat(float coordinates)
         {
             ViewData.Model = coordinates;
             return View();
         }
-
 
         // GET: General
         virtual public ActionResult Index(int? id)

@@ -2,7 +2,6 @@
 using System.Linq;
 using Parkwhere05.Models;
 
-
 namespace Parkwhere05.DAL
 {
     public class CarparkGateway : DataGateway<Carpark>
@@ -135,12 +134,12 @@ namespace Parkwhere05.DAL
 
         }
 
-        //public IEnumerable<Carpark> GetTopFiveBookmarks()
-        //{
-        //    Carparks = data.SqlQuery("SELECT * FROM dbo.Carparks C WHERE ( C.id IN ("
-        //        + "SELECT TOP(5) B.carparkId FROM dbo.Bookmarks B GROUP BY B.carparkId ORDER BY COUNT(*) DESC)"
-        //        + ")").ToList();
-        //    return Carparks;
-        //}
+        public IEnumerable<Carpark> GetTopFiveBookmarks()
+        {
+            Carparks = data.SqlQuery("SELECT * FROM dbo.Carparks C WHERE ( C.id IN ("
+                + "SELECT TOP(5) B.carparkId FROM dbo.Bookmarks B GROUP BY B.carparkId ORDER BY COUNT(*) DESC)"
+                + ")").ToList();
+            return Carparks;
+        }
     }
 }
